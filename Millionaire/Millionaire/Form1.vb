@@ -15,7 +15,7 @@ Public Class Form1
         balance = CDbl(amountSt)
 
         ' Compute the time it takes to reach the balance of a million
-        Do While balance < 1000000
+        Do Until balance >= 1000000
             balance += 0.06 * balance
             numYears += 1
         Loop
